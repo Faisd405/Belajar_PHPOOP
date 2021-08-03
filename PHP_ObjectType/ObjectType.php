@@ -6,7 +6,8 @@ Class Produk{
            $penerbit = "penerbit",
            $harga = "harga";
 
-
+    
+ //Constructor
     public function __construct( $judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga= 0)
     {
         $this->judul = $judul;
@@ -16,18 +17,32 @@ Class Produk{
     }
 
     public function getLabel(){
-        return "$this->judul,$this->penulis";
+        return "$this->penulis,$this->penerbit";
     }
 }
 
+//ObjectType
+class cetakInfoProduk {
+    public function cetak( Produk $produk){
+        $str = "{$produk->judul} | {$produk->getLabel()} (Rp. {$produk->harga})";
+        return $str;
+    }
+}
+
+
+ //Constructor
 $produk1 = new Produk("Naruto Shippuden","Masashi Kishimoto","Shueisha","1000");
 
 $produk3 = new Produk("Naruto Ninja Strom","Bandai Namcos","Bandai Namcos","1000");
-$produk2 = new Produk("Naruto Ninja");
+
 
 echo "Komik : " . $produk1->getLabel();
 echo "<br>";
 echo "Games : " . $produk3->getLabel();
+echo "<br>";
 
-var_dump($produk2);
+//ObjectType
+$infoProduk1 = new cetakInfoProduk();
+echo $infoProduk1->cetak($produk1);
+
 ?>

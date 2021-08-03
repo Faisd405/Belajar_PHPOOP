@@ -1,4 +1,4 @@
-Pembelajaran
+Pembelajaran PHP OOP
 
 1. PHP Class Object
 2. PHP Property Object
