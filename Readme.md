@@ -5,3 +5,5 @@ Pembelajaran PHP OOP
 3. PHP Constructor
 4. PHP Object Type
 5. PHP Inheritance
+6. PHP Overriding
+7. PHP Visibility
