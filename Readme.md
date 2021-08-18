@@ -7,3 +7,4 @@ Pembelajaran PHP OOP
 5. PHP Inheritance
 6. PHP Overriding
 7. PHP Visibility
+8. PHP Setter And Getter
