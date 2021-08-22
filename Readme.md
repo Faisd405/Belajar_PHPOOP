@@ -8,3 +8,8 @@ Pembelajaran PHP OOP
 6. PHP Overriding
 7. PHP Visibility
 8. PHP Setter And Getter
+9. PHP Static Keyword
+10. PHP Abstract Class
+11. PHP Interface
+12. PHP Autoloading
+13. PHP Namespace
